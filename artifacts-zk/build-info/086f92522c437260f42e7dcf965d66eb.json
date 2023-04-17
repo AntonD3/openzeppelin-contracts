@@ -1,0 +1,185 @@
+{
+  "id": "086f92522c437260f42e7dcf965d66eb",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/mocks/ERC165/ERC165NotSupported.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.7.0;\n\ncontract ERC165NotSupported { }\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "mode": "3"
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/mocks/ERC165/ERC165NotSupported.sol": {
+        "ERC165NotSupported": {
+          "abi": [],
+          "metadata": {
+            "optimizer_settings": "M3B3",
+            "solc_metadata": "{\"compiler\":{\"version\":\"0.7.4+commit.3f05b770\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/ERC165/ERC165NotSupported.sol\":\"ERC165NotSupported\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/mocks/ERC165/ERC165NotSupported.sol\":{\"keccak256\":\"0xcc0ff2b21dc6fa95cc35ba6b8cfa51b1ec6287c915d319ebe3c522de8686ea6d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://accb339b3da931646caeaa8bc4092eb424a0421b80402ca148dd3f457876db2e\",\"dweb:/ipfs/QmPVQRd8MUtUG412HXtUPzicTezH8fUHcuXoi3WTEk9UC6\"]}},\"version\":1}",
+            "zk_version": "1.3.8"
+          },
+          "evm": {
+            "legacyAssembly": null,
+            "assembly": "\t.text\n\t.file\t\"ERC165NotSupported.sol:ERC165NotSupported\"\n\t.globl\t__entry\n__entry:\n.func_begin0:\n\tadd\t128, r0, r1\n\tst.1\t64, r1\n\tand!\t1, r2, r1\n\tjump.ne\t@.BB0_1\n\tadd\tr0, r0, r1\n\tret.revert.to_label\tr1, @DEFAULT_FAR_REVERT\n.BB0_1:\n\tcontext.get_context_u128\tr1\n\tsub.s!\t0, r1, r1\n\tjump.ne\t@.BB0_3\n\tadd\t32, r0, r1\n\tst.2\t256, r1\n\tst.2\t288, r0\n\tadd\t@CPI0_0[0], r0, r1\n\tret.ok.to_label\tr1, @DEFAULT_FAR_RETURN\n.BB0_3:\n\tadd\tr0, r0, r1\n\tret.revert.to_label\tr1, @DEFAULT_FAR_REVERT\n.func_end0:\n\n\t.note.GNU-stack\n\t.rodata\nCPI0_0:\n\t.cell 53919893334301279589334030174039261352344891250716429051063678533632\n",
+            "bytecode": {
+              "object": "0000008001000039000000400010043f0000000101200190000000060000c13d000000000100001900000012000104300000000001000416000000000110004c0000000e0000c13d0000002001000039000001000010044300000120000004430000000501000041000000110001042e000000000100001900000012000104300000001000000432000000110001042e000000120001043000000000000000000000000200000000000000000000000000000040000001000000000000000000e179bb9211083d14c9d500df10cb86e6e74fe156a0031a0dbc2183500522350c"
+            },
+            "methodIdentifiers": {}
+          },
+          "hash": "01000007e1d96645cd2e14af2a79cf6d0ba609522a38a6492afb96ed2e38119f",
+          "factoryDependencies": {}
+        }
+      }
+    },
+    "sources": {
+      "contracts/mocks/ERC165/ERC165NotSupported.sol": {
+        "id": 0,
+        "ast": {
+          "nodeType": "SourceUnit",
+          "name": null,
+          "src": "33:57:0",
+          "memberName": null,
+          "functionName": null,
+          "AST": null,
+          "nodes": [
+            {
+              "nodeType": "PragmaDirective",
+              "name": null,
+              "src": "33:23:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": null,
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            },
+            {
+              "nodeType": "ContractDefinition",
+              "name": "ERC165NotSupported",
+              "src": "58:31:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": [],
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            }
+          ],
+          "statements": null,
+          "arguments": null,
+          "declarations": null,
+          "members": null,
+          "components": null,
+          "clauses": null,
+          "options": null,
+          "body": null,
+          "trueBody": null,
+          "falseBody": null,
+          "expression": null,
+          "condition": null,
+          "initializationExpression": null,
+          "leftExpression": null,
+          "rightExpression": null,
+          "subExpression": null,
+          "trueExpression": null,
+          "falseExpression": null,
+          "loopExpression": null,
+          "baseExpression": null,
+          "indexExpression": null,
+          "startExpression": null,
+          "endExpression": null,
+          "value": null,
+          "initialValue": null,
+          "externalCall": null,
+          "eventCall": null,
+          "errorCall": null,
+          "leftHandSide": null,
+          "rightHandSide": null,
+          "length": null
+        }
+      }
+    },
+    "errors": [],
+    "version": "0.7.4",
+    "long_version": "0.7.4+commit.3f05b770.Darwin.appleclang",
+    "zk_version": "1.3.8"
+  }
+}
